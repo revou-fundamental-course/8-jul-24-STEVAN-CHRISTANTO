@@ -1,0 +1,176 @@
+* {
+    font-family: arial, cambria, Tahoma, sans-serif;
+    
+}
+
+/* Background color keseluruhan */
+html {
+    background-color: rgb(221, 250, 255);
+}
+
+/* Content utama flex kanan kiri */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+
+}
+
+/* semua tulisan dengan class header jadi Ke Tengah */
+header {
+    text-align: center;
+}
+
+.section-kiri {
+    width: 50%;
+    padding: 30px;
+}
+
+.section-kanan {
+    width: 50%;
+    padding: 30px;
+}
+/* Content utama flex kanan kiri */
+
+ /* Align text artikel menjadi rata */
+p {
+    text-align: justify;
+}
+
+#pembukaan {
+    text-align: justify;
+}
+ /* Align text artikel menjadi rata */
+
+/* Form Input, Hasil, Tabel, dan Button Styling */
+.section-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tulisan Jenis Kelamin jadi Ke Tengah */
+.centered-text {
+    text-align: center;
+}
+
+/* Tulisan laki-laki dan perempuan jadi Ke Tengah */
+.input-container {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button {
+    width: 100%;
+    background-color: #3156dc;
+    color: white;
+    padding: 14px 20px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease; 
+  }
+  #hitung-bmi:hover {
+    background-color: #6b83db;
+  }
+   
+  #reset-button:hover {
+    background-color: #6b83db;
+  }
+
+.form-input {
+    background-color: rgb(150, 215, 218);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.box-hasil {
+    background-color: rgb(150, 215, 218);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hasil-bmi {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.tabel-bmi {
+    width: 100%;
+    height: 150px;
+    margin: none;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(150, 215, 218);
+    border-radius: 5px;
+}
+/* Form Input, Hasil, Tabel, dan Button Styling */
+
+
+/* Styling Tulisan */
+.download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+/* Button Styling */
+.button-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+/* Gambar Styling */
+.img {
+    width: 300px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+/* footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px; 
+    padding: 10px; 
+    border-top: 1px ; 
+}
+
+footer p {
+    text-align: center;
+    margin: 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+
+  /* Agar layar menjadi responsif */
+@media (max-width: 600px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .section-kiri {
+        width: 100%;
+        padding: 0;
+    }
+    .section-kanan {
+        width: 100%;
+        padding: 0;
+    }
+  }
+
+

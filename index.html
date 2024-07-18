@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
+    <main class="main-content">
+        <!-- Sisi Kiri -->
+        <section class="section-kiri">
+
+            <!-- Header Utama -->
+            <header>
+                <h1>Kalkulator BMI</h1>
+            </header>
+
+            <!-- Artikel -->
+            <article id="pembukaan">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang
+                menunjang
+                penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung
+                sekarang di kalkulator BMI
+            </article>
+
+            <!-- Form Section -->
+            <section class="section-form">
+
+                <form class="form-input" id="bmi-form">
+                    <div class="input-container">
+                        <p class="centered-text">Jenis Kelamin</p>
+                        <input type="radio" name="jeniskelamin" id="laki-laki" value="Laki-laki"><label
+                            for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="jeniskelamin" id="perempuan" value="Perempuan"><label
+                            for="perempuan">Perempuan</label>
+                    </div>
+                    <br />
+                    <br />
+                    <div>
+                        <!-- BB Maksimal 200kg, TB maksimal 300cm -->
+                        <input type="number" id="input-berat-badan" placeholder="Masukkan berat badan (Kg)" max="200">
+                        <input type="number" id="input-usia" placeholder="Masukkan usia (Tahun)">
+                        <input type="number" id="input-tinggi-badan" placeholder="Masukkan tinggi badan (Cm)" max="300">
+                        <button type="submit" id="hitung-bmi">Hitung BMI</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Artikel -->
+            <article>
+                <div>
+                    <p>Keunggulan Fitur</p>
+                    <ol>
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ol>
+                </div>
+                <div>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                    </p>
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+                        Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+                        kuadrat tinggi badan Anda (dalam meter) atau BMI=Kg/M².</p>
+                </div>
+
+            </article>
+        </section>
+        <!-- Sisi Kiri - END -->
+
+        <!-- Sisi kanan -->
+        <section class="section-kanan">
+
+            <!-- Result -->
+            <header>
+                <h1>Hasil BMI</h1>
+            </header>
+            <article>
+                <!-- Section hasil BMI -->
+                <section class="box-hasil">
+                    <!-- <p>Berikut hasil data anda:</p>
+                    <p class="data-user">Usia: <span class="usia"></span>, Jenis Kelamin: <span
+                            class="jenis-kelamin"></span></p> -->
+                    <p class="centered-text">Hasil BMI anda adalah</p>
+                    <h1 class="hasil-bmi"></h1>
+                    <p class="centered-text">Anda masuk ke kategori</p>
+                    <p><h3 class="kategori-bmi"></h3></p>
+                    <button id="reset-button">Reset</button>
+                </section>
+                <article>
+                    <!-- Tips dan Trick -->
+                    <header>
+                        <h1>Tabel BMI</h1>
+                    </header>
+                    <table class="tabel-bmi">
+                        <tr>
+                            <td>Kurang dari 18.5</td>
+                            <td>Kekurangan Berat Badan</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9 </td>
+                            <td>Normal (Ideal)</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 29.9</td>
+                            <td>Kelebihan Berat Badan</td>
+                        </tr>
+                        <tr>
+                            <td>Lebihdari 30</td>
+                            <td>Kegemukan (Obesitas)</td>
+                        </tr>
+                    </table>
+                    <p>Cara terbaik untuk menjaga dan menurunkan berat badan adalah dengan mengatur kalori makanan yang
+                        dikonsumsi dan berolahraga secara teratur.</p>
+                </article>
+                <!-- Button kosong tanpa fungsi -->
+                <button type="">Konsultasi Gizi via Aplikasi</button>
+                <button>Registrasi Online</button>
+                <!-- Artikel -->
+                <article>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit
+                        seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait
+                        dengan berat badan Anda.
+                    </p>
+                </article>
+            </article>
+        </section>
+        <!-- Sisi kanan - END -->
+    </main>
+    <div class="download-app">
+        <h6>Download Aplikasi</h6>
+        <div class="button-cta">
+          <img src="asset/google-play.png" alt="Google Play" class="img" aria-label="Download di Google Play">
+          <img src="asset/apple-store.jpg" alt="Apple Store" class="img" aria-label="Download di Apple Store">
+        </div>
+      </div>
+      <!-- Menu Download Aplikasi - END -->
     
+      
+    <footer>
+        <p>Created by: Stevan Christanto Sikawin</p>
+    </footer>
+    <!-- Footer untuk informasi Pembuat -->
+      <script src="js/scripts.js"></script>
 </body>
+
 </html>
